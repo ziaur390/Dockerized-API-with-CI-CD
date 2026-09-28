@@ -23,10 +23,9 @@
 ## 5. CI and documentation
 - [x] Add GitHub Actions tests with PostgreSQL and a container build.
 - [x] Document setup, API usage, architecture, limitations, and Git workflow.
-- [ ] Commit each module and push the feature branch.
-- [ ] Open a pull request and verify GitHub checks.
-- [ ] Merge the reviewed pull request and pull main locally.
+- [x] Commit each module and push the feature branch.
+- [x] Open a pull request and verify GitHub checks.
+- [x] Merge the validated pull request and pull main locally.
 
 The workflow validates and builds the image. Deployment to a hosted environment
 is future work; this project does not claim a live production deployment.
-

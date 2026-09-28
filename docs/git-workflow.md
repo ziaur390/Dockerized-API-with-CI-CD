@@ -58,6 +58,16 @@ git pull --ff-only origin main
 
 Pull fetches remote history and updates the current branch. `--ff-only` refuses
 to invent a merge commit if local and remote histories have diverged.
-These are next-step instructions, not a claim that the PR has already merged.
+PR #1 was merged after all four GitHub checks passed. The commands above were
+then run locally to fast-forward main to merge commit `56afd76`.
 
 For your next feature, start a new branch from the updated main and repeat.
+
+## Completed project evidence
+
+- [Merged pull request #1](https://github.com/ziaur390/Dockerized-API-with-CI-CD/pull/1)
+- [Passing pull request workflow](https://github.com/ziaur390/Dockerized-API-with-CI-CD/actions/runs/36436970824)
+- Local verification: 9 tests passed on PostgreSQL and SQLite; API restart
+  preserved the demo task; container ran as UID 1000.
+- A final documentation-only commit on main records checklist completion after
+  the merge and pull. The implementation was delivered through the feature PR.

@@ -105,4 +105,3 @@ Suggested CV wording after verifying the GitHub checks:
 > Built a FastAPI task API with PostgreSQL using Docker Compose; implemented
 > automated CRUD and validation tests and a GitHub Actions pipeline to test
 > changes and build a non-root container image.
-
