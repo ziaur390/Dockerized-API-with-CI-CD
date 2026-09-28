@@ -71,3 +71,10 @@ For your next feature, start a new branch from the updated main and repeat.
   preserved the demo task; container ran as UID 1000.
 - A final documentation-only commit on main records checklist completion after
   the merge and pull. The implementation was delivered through the feature PR.
+
+## Dashboard follow-up
+
+The task dashboard was developed on `feat/task-dashboard` and delivered through
+[pull request #2](https://github.com/ziaur390/Dockerized-API-with-CI-CD/pull/2).
+All four GitHub test and build checks passed before it was merged into main.
+Local main was then fast-forwarded with `git pull --ff-only origin main`.

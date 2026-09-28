@@ -35,4 +35,4 @@ is future work; this project does not claim a live production deployment.
 - [x] Connect the dashboard to task creation, listing, completion, editing, and deletion.
 - [x] Add search, status filters, loading and error states, and accessible controls.
 - [x] Check desktop and mobile layouts with the running API.
-- [ ] Commit and push the dashboard branch, then open a pull request.
+- [x] Commit and push the dashboard branch, verify PR #2 checks, merge, and pull main.
