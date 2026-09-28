@@ -1,7 +1,9 @@
 # Dockerized Task API with CI/CD
 
-A personal backend project demonstrating FastAPI, PostgreSQL, Docker Compose,
-automated API tests, and a GitHub Actions test-and-build pipeline.
+A personal project demonstrating a task dashboard backed by FastAPI and
+PostgreSQL, packaged with Docker Compose and checked by GitHub Actions.
+
+![Daymark task dashboard](docs/dashboard.png)
 
 ## Architecture and modules
 
@@ -15,6 +17,7 @@ automated API tests, and a GitHub Actions test-and-build pipeline.
 | Tests | `tests/test_api.py` | CRUD, validation, pagination, health |
 | Containers | `Dockerfile`, `compose.yaml` | API image, database, isolated tests |
 | CI | `.github/workflows/ci.yml` | PostgreSQL tests followed by image build |
+| Frontend | `app/static/` | Responsive task dashboard using the API |
 
 See [TODO.md](TODO.md) for progress and [docs/git-workflow.md](docs/git-workflow.md)
 for the development workflow.
@@ -28,6 +31,9 @@ docker compose up --build -d --wait
 ```
 
 Open http://localhost:18000/docs to use the interactive API documentation.
+Open http://localhost:18000/ for the task dashboard. It uses the same API to
+create, search, filter, edit, complete, and delete tasks. The dashboard is
+served by FastAPI, so it needs no separate frontend server or API URL setting.
 Compose includes demo database credentials and binds the API to localhost.
 Optionally copy `.env.example` to `.env` to customize the database settings.
 Use URL-safe credential values or URL-encode credentials in `DATABASE_URL`.
@@ -102,6 +108,6 @@ and deployment with managed secrets.
 
 Suggested CV wording after verifying the GitHub checks:
 
-> Built a FastAPI task API with PostgreSQL using Docker Compose; implemented
-> automated CRUD and validation tests and a GitHub Actions pipeline to test
-> changes and build a non-root container image.
+> Built a responsive task dashboard backed by a FastAPI and PostgreSQL CRUD API;
+> containerized the stack with Docker Compose and added PostgreSQL integration
+> tests and GitHub Actions checks that build the runtime image.
