@@ -29,3 +29,10 @@
 
 The workflow validates and builds the image. Deployment to a hosted environment
 is future work; this project does not claim a live production deployment.
+
+## 6. Task dashboard
+- [x] Serve a responsive frontend from the FastAPI container.
+- [x] Connect the dashboard to task creation, listing, completion, editing, and deletion.
+- [x] Add search, status filters, loading and error states, and accessible controls.
+- [x] Check desktop and mobile layouts with the running API.
+- [ ] Commit and push the dashboard branch, then open a pull request.
